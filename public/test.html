@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>歌单调序</title>
+    <meta name="color-scheme" content="dark" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.26.1/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="head">
+      <span>手机号：</span>
+      <input id="phone" />
+      <span>密码：</span>
+      <input id="password" />
+      <button id="login">登录</button>
+      <button id="savelist">保存更改</button>
+      <button id="newfolder">新建文件夹</button>
+      <span>用户：</span>
+      <span id="userid"></span>
+      <span>歌单数：</span>
+      <span id="plc"></span>
+      <span>状态：</span>
+      <span id="stat"></span>
+    </div>
+    <div id="leftbar" class="sidebar">
+      <div id="leftresize" class="resizebar"></div>
+      <button id="leftbtn" class="floatbtn">Q</button>
+      <div id="leftctn" class="sidectn"></div>
+    </div>
+    <div id="rightbar" class="sidebar hide">
+      <div id="rightctn" class="sidectn"></div>
+      <div id="rightresize" class="resizebar"></div>
+      <button id="rightbtn" class="floatbtn">E</button>
+    </div>
+    <div id="container"></div>
+    <div id="menu" class="menu hide" tabindex="1"></div>
+    <div id="selector" class="hide"></div>
+    <div id="dragimg"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
